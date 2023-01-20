@@ -8,24 +8,24 @@ int num = Convert.ToInt32(Console.ReadLine());
 int numForCount = num;
 int count = 0;
 
-if (numForCount > 99)
+if(numForCount > 99)
 {
-while (numForCount%10 != 0)
-{
-numForCount = numForCount/10;
-count++;
-}
+    while(numForCount%10 != 0)
+    {
+        numForCount = numForCount/10;
+        count++;
+    }
 
 int numForCalculation = Convert.ToInt32(num % Math.Pow(10, count-2));
 
-while (numForCalculation >= 10)
-{
-numForCalculation /= 10;
-}
+    while(numForCalculation >= 10)
+    {
+        numForCalculation /= 10;
+    }
 
-System.Console.WriteLine($"{num} -> {numForCalculation}");
+    System.Console.WriteLine($"{num} -> {numForCalculation}");
 }
 else
 {
-System.Console.WriteLine($"{num} -> третьей цифры нет");
+    System.Console.WriteLine($"{num} -> третьей цифры нет");
 }
