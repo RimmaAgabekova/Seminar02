@@ -7,13 +7,13 @@
 Console.WriteLine("Введите трехзначное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num > 99 && num < 999)
+if(num > 99 && num < 999)
 {
-int s = (num / 10) % 10;
+    int s = (num / 10) % 10;
 
-System.Console.WriteLine($"{num} -> {s}");
+    System.Console.WriteLine($"{num} -> {s}");
 }
 else
 {
-System.Console.WriteLine($"{num} -> {"Нетрехзначное число"}");
+    System.Console.WriteLine($"{num} -> {"Нетрехзначное число"}");
 }
